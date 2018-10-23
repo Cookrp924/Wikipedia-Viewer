@@ -1,26 +1,35 @@
-body{
-	background-image: url("https://www.poynter.org/sites/default/files/2018-04/Wiki-image.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-width: 1000px;
-	min-height: 600px
+.row {
+	width: 100%;
 }
 
-.container{
-	display: block;
-	position: relative;
-	top: 0;
-	left: 25%;
-	height: 180px;
-	width: 50%;
-	padding-top: 30px;
+.responsive {
+	width: 100%;
+	height: auto;
+	max-height: 640px;
+}
+
+.explore {
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	text-shadow: 1px 1px rgb(180, 185, 196);
+	text-shadow: 2px 2px rgb(180, 185, 196);
+}
+
+.explore p {
+	font-size: 3em;
+}
+
+#random:hover {
+	font-size: 3.5em;
 }
 
 #search{
-	font-size: 2.5em;
+	margin-bottom: 10%;
+	font-size: 5em;
 	color: blue;
+}
+
+#search:hover {
+	font-size: 5.5em;
 }
 
 #query{
@@ -42,4 +51,19 @@ body{
 a, a:hover{
 	color: black;
 	text-decoration: none;
+}
+
+@media (min-width: 650px) and (max-width: 767.98px) {
+	.explore {
+		margin-top: 5%;
+	}
+}
+
+@media (max-width: 649.98px) {
+	.row {
+		margin-left: 2%;
+	}
+	.explore {
+		margin-top: 5%;
+	}
 }
